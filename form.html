@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Doctor Appointment Request form</title>
+</head>
+<style>
+*{
+   font-family: arial;
+}
+form{
+   padding: 1cm;
+   margin-top:1cm;
+   margin-left: 1cm;
+   margin-right: 8cm;
+   border-radius: 0.4cm;
+   border: 0.025cm ridge blue;
+   background-color: white;
+   position: absolute;
+}   
+input,button,select,option{
+   border: 0.025ch ridge dodgerblue;
+   border-radius: 0.1cm;
+   background-color: white;
+}
+input{
+   height: 1cm;
+   width: 10cm;
+}
+select,option{
+   height: 1cm;
+   width: 10.2cm;
+   background-color: white;
+}
+.textbelow{
+   font-size: 12px;
+   color: gray;
+}
+.address{
+   width:20.2cm;
+}
+.innerlabel{
+   position:absolute;
+   margin-left: 0.1cm;
+}
+body{
+   height:30cm;
+   width: 25cm;
+   margin-left: 4cm;
+   background-color: rgb(94, 94, 253);
+}
+</style>
+<body>
+<form>
+<h1 style="padding-bottom:0.5cm;text-align: center; border-bottom: 0.025cm dotted rgb(94, 94, 253);">Doctor Appointment Request Form</h1>
+<label>Name<br></label>
+<input id="firstname" name="firstname" type="text">
+<input id="lastname" name="lastname" type="text" class="innerlabel">
+<label class="textbelow" for="firstname"><br>First Name
+<label class="textbelow" style="margin-left: 8.7cm;" for="lastname">Last Name<br></label></label>
+<label for="dateofbirth"><br>Date of Birth
+<label style="margin-left: 7.8cm;" for="gender">Gender<br></label></label>
+<input name="dateofbirth" id="dateofbirth" type="date">
+<select class="innerlabel" id="gender" name="gender">
+<option>Male</option>
+<option>Female</option>   
+<option>Not willing to disclose</option>      
+</select>
+<br>
+<label for="Phonenumber"><br>Phone Number
+<label style="margin-left: 7.4cm;" for="email">Email<br></label></label>
+<input type="text" placeholder="+92-000-0000000" name="Phonenumber" id="Phonenumber">
+<input type="email" placeholder="example@example.com" class="innerlabel" id="email" name="email">
+<label><br><br>Address<br></label>
+<input type="text" class="address" id="streetaddresss" name="streetaddresss">
+<label class="textbelow" for="streetaddresss"><br>Street Address<br></label>
+<input type="text" class="address" id="streetaddresssline2" name="streetaddresssline2">
+<label class="textbelow" for="streetaddresssline2"><br>Street Address Line 2<br></label>
+<input type="text" id="city" name="city">
+<input type="text" class="innerlabel" id="state" name="state">
+<label class="textbelow" fr="city"><br>City
+<label class="textbelow" style="margin-left: 9.7cm;" for="state">State/Province<br></label></label>
+<input type="text" class="address" id="postalzip" name="posalzip">
+<label class="textbelow" for="postalzip"><br>Postal/Zip Code<br></label>
+<p>Have you ever applied to our facility before?<br></p>
+<input type="radio" id="yes" name="condition" value="Yes" style="height: 0.3cm; width: 0.3cm;">
+<label style="margin-right: 3cm;" for="yes">Yes</label>
+<input type="radio"style="height: 0.3cm; width: 0.3cm;" id="no" name="condition" value="No">
+<label for="no">No</label>
+<p for="question">Which department would to like to get an appointment from?<br></p>
+<input type="text" id="question" name="question">
+<p for="procedure">Which procedure do you want to make an appointment for?</p>
+<select id="procedure" name="procedure">
+<option>Medical Examination</option>
+<option>Doctor Check</option>
+<option>Result Analysis</option>
+<option>Check-up</option>    
+</select>
+<br>
+<p>Preferred Appointment Date and Time</p>
+<label for="Date">Date
+<label style="margin-left: 9.20cm;" for="time">Time<br></label></label>
+<input type="date" id="Date" name="Date">
+<select class="innerlabel" id="time" name="time">
+<option>18:00</option>
+<option>18:30</option>
+<option>19:00</option>
+<option>19:30</option>
+<option>20:00</option>
+<option>20:30</option>
+<option>23:00</option>
+<option>23:30</option>
+</select>
+<br><br>
+<button style="background-color: white;">Submit</button>
+</form>
+</body>
+</html>
